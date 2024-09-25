@@ -1,0 +1,63 @@
+﻿<Window x:Class="SZGYA13C_choco.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SZGYA13C_choco"
+        mc:Ignorable="d"
+        Title="ChocoDelights" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height=".5*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Choco Delights Kínálat" FontSize="20" FontWeight="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0"/>
+        <Label x:Name="kinalat"  Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="0,31,0,0"/>
+        <Label Content="különböző termék típus van." HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0"/>
+
+        <Label Content="Legolcsóbb termékünk:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0"/>
+        <Label x:Name="legolcsobbTermek" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+
+        <Label Content="Ajánlatunk:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0"/>
+        <Label x:Name="ajanlatunk" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+
+        <Label Content="Írja be a keresett csokoládé típusát:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Grid.Column="0"/>
+        <TextBox x:Name="keresettCsokiTipus" Text="" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Margin="0,26,0,0"/>
+        <Button x:Name="arajanlat" Content="Árajánlat készítése" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0"/>
+
+
+        <Label Content="Új Termék Felvétele" FontSize="20" FontWeight="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+
+        <Label Content="Új termék neve:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="termekNeve" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" />
+
+        <Label Content="Csoki típusa:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="csokiTipusa" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" />
+
+        <Label Content="Ár (Ft):" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
+        <TextBox x:Name="termekAra" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" />
+
+        <Label Content="Termék típusa:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1"/>
+        <TextBox x:Name="termekTipusa" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" />
+
+        <Label Content="Kakaó Tartalom (%):" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1"/>
+        <TextBox x:Name="kakaoTartalom" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" />
+
+        <Label Content="Nettó Tömeg (g):" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="6" Grid.Column="1"/>
+        <TextBox x:Name="nettoTomeg" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1" />
+
+        <Button x:Name="ujTermekFelvetele" Content="Új Termék Felvétele " Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Click="ujTermekFelvetele_Click"/>
+
+    </Grid>
+</Window>
