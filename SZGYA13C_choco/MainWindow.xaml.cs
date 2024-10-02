@@ -46,14 +46,27 @@ namespace SZGYA13C_choco
                                  .Select(c => $"{c.First().TermekNev} {c.Key}")
                                  .ToList();
 
-            File.WriteAllLines(@"..\..\..\src\elerheto.txt", elerheto);
+            File.WriteAllLines(@"..\..\..\src\lista.txt", elerheto);
 
             //6. feladat
             var kakaos = csokik.Where(c => int.Parse(c.KakaoTartalom) > 0).ToList();
 
+        }
+        private void arajanlat_Click(object sender, RoutedEventArgs e)
+        {
+            //7. feladat
+
+            var keresettTipus = csokik.Select(c => c.TermekTipus == keresettCsokiTipus.Text).ToList();
+
+            if (keresettTipus != null)
+            {
+                MessageBox.Show($"{keresettTipus.Count()}db termék van!", "ikd", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+
+
 
         }
-        
+
         private void ujTermekFelvetele_Click(object sender, RoutedEventArgs e)
         {
             //8. feladat
@@ -97,5 +110,7 @@ namespace SZGYA13C_choco
             nettoTomeg.Text = string.Empty;
 
         }
+
+      
     }
 }

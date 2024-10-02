@@ -34,7 +34,7 @@
 
         <Label Content="Írja be a keresett csokoládé típusát:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Grid.Column="0"/>
         <TextBox x:Name="keresettCsokiTipus" Text="" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Margin="0,26,0,0"/>
-        <Button x:Name="arajanlat" Content="Árajánlat készítése" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0"/>
+        <Button x:Name="arajanlat" Content="Árajánlat készítése" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" Click="arajanlat_Click"/>
 
 
         <Label Content="Új Termék Felvétele" FontSize="20" FontWeight="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1"/>
